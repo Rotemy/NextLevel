@@ -243,7 +243,7 @@ public class NextLevelSession {
 
 extension NextLevelSession {
 
-    func rotem() {
+    public func rotem() {
         print("--------ROTEM--------")
     }
     
