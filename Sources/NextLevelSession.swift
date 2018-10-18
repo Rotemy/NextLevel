@@ -243,8 +243,9 @@ public class NextLevelSession {
 
 extension NextLevelSession {
 
-    public func rotem() {
-        print("--------ROTEM--------")
+    public func updateVideoTransform(transform: CGAffineTransform) {
+        print("-------- is video input nil \(self._videoInput == nil)--------")
+        self._videoInput?.transform = transform
     }
     
     /// Prepares a session for recording video.
