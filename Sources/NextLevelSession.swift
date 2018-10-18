@@ -349,8 +349,9 @@ extension NextLevelSession {
     
     internal func destroyWriter() {
         self._writer = nil
-        self._videoInput?.markAsFinished()
         self._videoInput = nil
+        self._audioInput = nil
+        self._pixelBufferAdapter = nil
         self._currentClipHasStarted = false
         self._timeOffset = CMTime.zero
         self._startTimestamp = CMTime.invalid
