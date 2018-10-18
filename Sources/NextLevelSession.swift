@@ -348,6 +348,7 @@ extension NextLevelSession {
     }
     
     internal func destroyWriter() {
+        self._videoInput = nil
         self._writer = nil
         self._currentClipHasStarted = false
         self._timeOffset = CMTime.zero
