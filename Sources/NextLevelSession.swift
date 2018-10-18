@@ -242,6 +242,10 @@ public class NextLevelSession {
 // MARK: - setup
 
 extension NextLevelSession {
+
+    func rotem() {
+        print("--------ROTEM--------")
+    }
     
     /// Prepares a session for recording video.
     ///
